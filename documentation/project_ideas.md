@@ -1,7 +1,7 @@
-#Project Ideas Charter
+# Project Ideas Charter
 
 
-##Team Members:
+## Team Members:
 - David Grant
 - Spencer Sipes
 - Christian Bradley
@@ -9,7 +9,7 @@
 - Justin Patterson
 
 
-##Potential Data Sets : ( At least 4 )
+## Potential Data Sets : ( At least 4 )
 >Source of:
 >	-
 >Description:
