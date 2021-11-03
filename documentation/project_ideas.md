@@ -9,7 +9,7 @@
 - Justin Patterson
 ---
 
-## Potential Data Sets : ( At least 4 )
+## Potential Data Sets : ( One from each member )
 
 
 ```
