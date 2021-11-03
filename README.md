@@ -16,3 +16,20 @@
 5. Report & Source Code
 6. Presentation & Demo
 7. Teammate Evaluations
+
+### The Team
+
+[Team Charter](documentation/team_charter.md)
+
+**Team Name**
+: 15 Years of Experience (yes, it's a joke. :-))
+
+**Team Members**
+:
+| Member Name | Member Email |
+| ----------- | ----------- |
+| Christian Bradley  | <cbradl20@uncc.edu> (prefer <chris@chrisgbradley.com>) |
+| Will Ingersoll | <wingerso@uncc.edu> |
+| Justin Patterson | <jpatte88@uncc.edu> |
+| Spencer Sipes | <ssipes2@uncc.edu> |
+| David Grant | <dgrant20@uncc.edu> |
