@@ -122,3 +122,30 @@ End-Use Customer
 	* Yearly Earnings
 	* Poverty Rate
 	* Population
+
+### Computer Hardware Performance
+
+**Source**
+: https://archive.ics.uci.edu/ml/datasets/Computer+Hardware 
+
+**Description**
+: The estimated relative performance values were estimated by the authors using a linear regression method. Data set includes relative CPU performance data.
+
+**End-Use Customer**
+: Customers would utilize the statistics provided to find their ideal CPU and possibly other pieces of hardware as well. 
+
+**Problem It Solves**
+: Obscure statistics that are normally provided mean nothing to the common person and cause a lot of confusion. 
+
+**Justification**
+: This data would provide a much more in depth analysis than what is normally provided when shopping for computer parts.
+
+**Vision**
+: Use a data set regarding Computer Hardware to help the user find their ideal parts.
+
+**Major Features**
+:	
+* Filters for price and what the user wants in a computer.
+* Suggestions based on filters.
+* Compatibility checker.
+
