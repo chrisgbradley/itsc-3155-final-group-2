@@ -44,14 +44,15 @@ Major Features:
 : Utilize open source data provided by all universities in the US to create a multilayer dashboard that allows a variety of end-users from all different backgrounds to see quality representations of data that help them see trends and make decisions accordingly.
 
 **Major Features**
-: 	* Tuition Layer
-		* Cost of Tuition Over Years
-		* GPA Outcome vs Tuition 
-  	* GPA Layer
-	    * GPA Per FT/PT Students
-	    * GPA Per State with Private/Public/All toggle
-	* SAT/ACT Trends On Admittance
-	* Federal Loan Information
+: 
+* Tuition Layer
+	* Cost of Tuition Over Years
+	* GPA Outcome vs Tuition 
+* GPA Layer
+    * GPA Per FT/PT Students
+    * GPA Per State with Private/Public/All toggle
+* SAT/ACT Trends On Admittance
+* Federal Loan Information
 
 ### 2018 Data On New Coders vs. Employment
 
@@ -74,19 +75,20 @@ End-Use Customer
 : The project idea is to inform young coders, as well as those thinking about becoming coders, by utilizing data provided from a group dedicated to teaching people to code. The data can help these rising computer scientists form a more focused path for their coding career. 
 
 **Major Features**
-: 	* Events to attend for coding
-		* Workshops
-		* Meetups
-		* Hackathons
-	* Online resources
-	* Degree levels for coders
-		* Degree levels for current employees
-		* Degree levels for new coders
-		* Type of degree
-	* Current jobs for employed coders
-		* Software dev
-		* IT
-		* Education
+: 	
+* Events to attend for coding
+	* Workshops
+	* Meetups
+	* Hackathons
+* Online resources
+* Degree levels for coders
+	* Degree levels for current employees
+	* Degree levels for new coders
+	* Type of degree
+* Current jobs for employed coders
+	* Software dev
+	* IT
+	* Education
 
 ### Old Money Versus New Money (2018)
 
@@ -110,11 +112,12 @@ End-Use Customer
 : Utilize open source data provided by census.gov to present financial data for different ages and genders in a tasteful manner.
 
 **Major Features**
-:	* Age Focused
-		* Yearly Earnings
-		* Poverty Rate
-		* Population
-	* Gender Focused
-		* Yearly Earnings
-		* Poverty Rate
-		* Population
+:	
+* Age Focused
+	* Yearly Earnings
+	* Poverty Rate
+	* Population
+* Gender Focused
+	* Yearly Earnings
+	* Poverty Rate
+	* Population
