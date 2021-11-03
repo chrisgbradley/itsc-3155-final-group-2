@@ -24,6 +24,9 @@ Major Features:
 
 ### Higher Education Statistics Since 1996
 
+**Member**
+: Christian Bradley
+
 **Source**
 : https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020
   Office of Planning, Evaluation and Policy Development (OPEPD)
@@ -55,6 +58,9 @@ Major Features:
 * Federal Loan Information
 
 ### 2018 Data On New Coders vs. Employment
+
+**Member**
+: Spencer Sipes
 
 **Source**
 : https://www.freecodecamp.org/news/we-asked-20-000-people-who-they-are-and-how-theyre-learning-to-code-fff5d668969/ 
@@ -92,6 +98,9 @@ End-Use Customer
 
 ### Old Money Versus New Money (2018)
 
+**Members**
+: Justin Patterson
+
 **Source**
 : 	
 * YOUNG:https://www.census.gov/data/tables/2018/demo/age-and-sex/2018-age-sex-composition.html#:~:text=Table%209.%20Earnings%20of%20Full-Time%2C%20Year-Round%20Workers%2015%20Years%20and%20Over%20by%20Sex%20and%20Age%3A%202017
@@ -124,6 +133,9 @@ End-Use Customer
 	* Population
 
 ### Computer Hardware Performance
+
+**Members**
+: David Grant
 
 **Source**
 : https://archive.ics.uci.edu/ml/datasets/Computer+Hardware 
