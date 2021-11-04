@@ -161,3 +161,32 @@ End-Use Customer
 * Suggestions based on filters.
 * Compatibility checker.
 
+### Behind The Curtain
+#### An ethical film analysis engine
+
+**Sources** 
+: Wikipedia/DBPedia
+
+**Description**
+: A tool for understanding who and what organizations were involved in the production of a film/television show/video game/song/etc. 
+
+**End User Customer**
+: Conscious media consumers who wish to know exactly who and what is behind the media they consume
+
+**Problem It Solves**
+: Not being able to find a concise answer on who or what sponsors/produces/stars in the media that a person is interested in.
+
+**Justification**
+: The media-entertainment industry is a complex network of companies and individuals with different ideals, controversies, and contributions to society that are difficult to navigate on your own. This product would help individuals make more conscious decisions about who should get their money and what values they want to uphold.
+
+**Vision**
+: This product will give individuals the information they need to make informed decisions about what media they should consume according to their moral values.
+
+**Major Features**
+:
+* Give detailed information regarding the finances and sponsorships of a particular film as available.
+* Give detailed descriptions of on-set controversies
+* Give list of key figures in production (I.E Producer, Director, Distribution, Lead Actor)
+	* Be able to access controversies and contributions for these figures as available.
+* Provide content warning as available
+* Give a rough score of how controversial a film is
