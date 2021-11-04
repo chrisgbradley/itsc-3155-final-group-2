@@ -22,6 +22,8 @@ Vision:
 Major Features:
 ```
 
+
+---
 ### Higher Education Statistics Since 1996
 
 **Member**
@@ -57,6 +59,8 @@ Major Features:
 * SAT/ACT Trends On Admittance
 * Federal Loan Information
 
+
+---
 ### 2018 Data On New Coders vs. Employment
 
 **Member**
@@ -96,6 +100,8 @@ End-Use Customer
 	* IT
 	* Education
 
+
+---
 ### Old Money Versus New Money (2018)
 
 **Member**
@@ -132,6 +138,8 @@ End-Use Customer
 	* Poverty Rate
 	* Population
 
+
+---
 ### Computer Hardware Performance
 
 **Member**
@@ -161,6 +169,8 @@ End-Use Customer
 * Suggestions based on filters.
 * Compatibility checker.
 
+
+---
 ### Behind The Curtain
 #### An ethical film analysis engine
 
