@@ -1,14 +1,14 @@
 # Project Ideas Charter
----
 
+---
 ## Team Members:
 - David Grant
 - Spencer Sipes
 - Christian Bradley
 - Will Ingersoll
 - Justin Patterson
----
 
+---
 ## Potential Data Sets : ( One from each member )
 
 
