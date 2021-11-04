@@ -98,7 +98,7 @@ End-Use Customer
 
 ### Old Money Versus New Money (2018)
 
-**Members**
+**Member**
 : Justin Patterson
 
 **Source**
@@ -163,6 +163,9 @@ End-Use Customer
 
 ### Behind The Curtain
 #### An ethical film analysis engine
+
+**Member**
+: Will Ingersoll
 
 **Sources** 
 : Wikipedia/DBPedia
