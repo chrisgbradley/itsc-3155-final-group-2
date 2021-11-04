@@ -10,7 +10,9 @@
 
 #### Project Steps
 1. Team Charter ( 5 People )
+    * [Team Charter](documentation/team_charter.md)
 2. Project Idea Formation ( 4-5 Separate Ideas )
+    * [Project Ideas](documentation/project_ideas.md)
 3. Project Proposal ( After agreeing to one idea )
 4. Product Pitch ( Written and Video )
 5. Report & Source Code
