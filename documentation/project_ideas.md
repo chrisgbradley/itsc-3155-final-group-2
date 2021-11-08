@@ -64,7 +64,7 @@ Major Features:
 ### 2018 Data On New Coders vs. Employment
 
 **Member**
-: Spencer Sipes
+: Justin Patterson
 
 **Source**
 : https://www.freecodecamp.org/news/we-asked-20-000-people-who-they-are-and-how-theyre-learning-to-code-fff5d668969/ 
@@ -105,7 +105,7 @@ End-Use Customer
 ### Old Money Versus New Money (2018)
 
 **Member**
-: Justin Patterson
+: Spencer Sipes
 
 **Source**
 : 	
