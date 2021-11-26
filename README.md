@@ -14,7 +14,9 @@
 2. Project Idea Formation ( 4-5 Separate Ideas )
     * [Project Ideas](documentation/project_ideas.md)
 3. Project Proposal ( After agreeing to one idea )
+    * [Project Proposal](documentation/project_proposal.md)
 4. Product Pitch ( Written and Video )
+    * [Project Proposals](documentation/project_pitches)
 5. Report & Source Code
 6. Presentation & Demo
 7. Teammate Evaluations
