@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<script src="{% static 'dashnav.js' %} "></script>
+<h1>Dashboard</h1>
+{% include './partials/_dashnav.html' %}
+
+{% block board %}
+{% endblock %}
+
+{% endblock %}

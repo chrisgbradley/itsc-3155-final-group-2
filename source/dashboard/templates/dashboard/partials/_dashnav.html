@@ -1,0 +1,19 @@
+<select name="dashnav" id="dashnav">
+    <option value="../../boards/tuition" {{tuition}} >Tuition</option>
+    <option value="../../boards/admissions" {{admissions}} >Admissions</option>
+    <option value="../../boards/degrees" {{degrees}} >Degrees Awarded</option>
+    <option value="../../boards/loansgrants" {{loansgrants}} >>Loans & Grants</option>
+</select>
+
+{{mytext}}
+
+<script type="text/javascript">
+    $(function(){
+        // bind change event to select
+        $('#dashnav').on('change', function () {
+            var url = $(this).val(); // get selected value
+            window.location.href = url; // redirect
+            return false;
+        });
+    });
+</script>
