@@ -8,6 +8,9 @@ from flask import render_template
 def home(requests):
     return render(requests, 'dashboard/home.html')
 
+def about(requests):
+    return render(requests, 'dashboard/about.html')
+
 
 def dashboard(requests):
     response = HttpResponse(status=302)
