@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>EduWatch Home</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link href="/static/eduwatch.css" rel="stylesheet" type="text/css" >
-</head>
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <body>
-
-	{% include 'header.html' %}
-
 	<br><br><br>
 	<div class="more">
 			<table>
@@ -24,19 +10,21 @@
 						<td>
 							<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
 						</td>
-						<td rowspan="2"><img src="{% static 'students2.png' %}" height="600px" width="905px"></td>
+						<td rowspan="2"><img src="{% static 'students2.png' %}" height="550px" width="905px"></td>
 					</tr>
 					<tr>
 						<td>
-							EduWatch is a dashboard dedicated to providing students with data that may be
-							relevant to them throughout their college career. Using
-							<a href=https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020>data</a>
-							provided by the Office of Planning, Evaluation and Policy Development (OPEPD), EduWatch allows you to access
-							statistics such as admission rates, graduations rates, and even net tuition cost per year. Browse the data
-							to see where you might fall compared to other students!
-							<br><br><br>
+							<p style="text-align:center">
+								EduWatch was created with the vision of compiling information on the nation's top schools
+								into one convenient place. We felt it important to create a place for prospective and current students
+								to view information relevant to their college career in a way that is both easily digestible and highly specific.
+								To this end, we provide many viewing formats for our data.
+							</p>
+							<p style="text-align:center;font-size:40px">
+								<em>Want to see for youself?</em>
+							</p>
 							<form action="" style="text-align: center;">
-    							<input type="submit" value="See The Data" />
+    							<input type="submit" value="View The Data" />
 							</form>
 							<br><br><br>
 						</td>
@@ -49,22 +37,24 @@
 			<table>
 				<tbody>
 					<tr>
-						<td rowspan="2"><img src="{% static 'learning.png' %}" height="600px" width="905px"></td>
+						<td rowspan="2"><img src="{% static 'learning.png' %}" height="550px" width="905px"></td>
 						<td>
 							<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							EduWatch is a dashboard dedicated to providing students with data that may be
-							relevant to them throughout their college career. Using
-							<a href=https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020>data</a>
-							provided by the Office of Planning, Evaluation and Policy Development (OPEPD), EduWatch allows you to access
-							statistics such as admission rates, graduations rates, and even net tuition cost per year. Browse the data
-							to see where you might fall compared to other students!
-							<br><br><br>
+							<p style="text-align:center">
+								Our goal is to provide you with the data
+								you need to make an informed choice with your education. Important college statistics are spread out
+								over the internet, but here at EduWatch we have compiled the most important data from the Office of Planning, Evaluation,
+								and Policy Development (OPEPD) and made it as easy to understand as possible.
+							</p>
+							<p style="text-align:center;font-size:40px">
+								<em>Want to find out more?</em>
+							</p>
 							<form action="" style="text-align: center;">
-    							<input type="submit" value="See The Data" />
+    							<input type="submit" value="View The Data" />
 							</form>
 							<br><br><br>
 						</td>
@@ -72,9 +62,5 @@
 				</tbody>
 			</table>
 		</div>
-
-    {% include 'footer.html' %}
-
-
 </body>
 {% endblock %}

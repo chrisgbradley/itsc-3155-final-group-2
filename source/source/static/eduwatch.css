@@ -47,11 +47,18 @@
 		a
 		{
 			color: white;
+			text-decoration: none!important;
+		}
+
+		a:link
+		{
+		    text-decoration: none!important;
 		}
 
 		a:visited
 		{
 			color: white;
+			text-decoration: none!important;
 		}
 
 		h2

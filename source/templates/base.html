@@ -1,18 +1,13 @@
 {% load static %}
+{% include 'partials/_head.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
 <body>
-
+{% include 'partials/header.html' %}
 <div class="content">
     {% block content %}
     {% endblock %}
 </div>
+{% include 'partials/footer.html' %}
 
 </body>
 </html>

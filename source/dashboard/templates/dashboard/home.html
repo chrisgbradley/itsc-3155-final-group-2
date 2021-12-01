@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>EduWatch Home</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link href="/static/eduwatch.css" rel="stylesheet" type="text/css" >
-</head>
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <body>
-
-	{% include 'header.html' %}
-
 	<main>
 		<br><br><br>
 		<div class="home">
@@ -29,15 +15,16 @@
 					</tr>
 					<tr>
 						<td>
-							EduWatch is a dashboard dedicated to providing students with data that may be
-							relevant to them throughout their college career. Using
-							<a href=https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020>data</a>
-							provided by the Office of Planning, Evaluation and Policy Development (OPEPD), EduWatch allows you to access
-							statistics such as admission rates, graduations rates, and even net tuition cost per year. Browse the data
-							to see where you might fall compared to other students!
-							<br><br><br>
+							<p style="text-align:center;">
+								Tired of combing the web for info on your prospective schools? <br>
+								Tired of hard to read reports and misleading adverts? <br>
+								Want to discover what college is best for you?
+							</p>
+							<p style="text-align:center;font-size:40px">
+								<em>We have you covered.</em>
+							</p>
 							<form action="../../dashboard" style="text-align: center;">
-    							<input type="submit" value="See The Data" />
+    							<input type="submit" value="View Our Data" />
 							</form>
 							<br><br><br>
 						</td>
@@ -91,11 +78,6 @@
 			</p>
 			<br><br><br>
 		</div>
-
 	</main>
-
-{% include 'footer.html' %}
-
-
 </body>
 {% endblock %}

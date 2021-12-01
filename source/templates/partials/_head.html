@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +11,3 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="/static/eduwatch.css" rel="stylesheet" type="text/css" >
 </head>
-{% extends '../dashboard.html' %}
-{% load static %}
-
-{% block board %}
-
-{% include 'header.html' %}
-<h2>degrees</h2>
-{% include 'footer.html' %}
-
-{% load plotly_dash %}
-
-{% plotly_app name="MF4YR" %}
-
-{% endblock %}
