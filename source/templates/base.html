@@ -1,17 +1,21 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 {% include 'partials/_head.html' %}
 
 <body>
+
 {% include 'partials/header.html' %}
+
 <div class="content">
+
     {% block content %}
     {% endblock %}
+
 </div>
+
 {% include 'partials/footer.html' %}
 
 </body>

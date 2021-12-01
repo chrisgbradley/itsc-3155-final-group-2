@@ -1,13 +1,18 @@
 import pandas as pd
 import plotly.express as px  # (version 4.7.0 or higher)
-import plotly.graph_objects as go
-from dash import Dash, dcc, html, Input, Output  # pip install dash (version 2.0.0 or higher)
+from dash import Dash
+from dash.dependencies import Input, Output
+import dash_core_components as dcc
+import dash_html_components as html
+import plotly.graph_objs as go  # pip install dash (version 2.0.0 or higher)
+from django_plotly_dash import DjangoDash
 
-app = Dash(__name__)
+
+app = DjangoDash("Tuition")
 
 
 # -- Import our data into the code as a panda data frame.
-df = pd.read_csv("Tuition-FINAL.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/chrisgbradley/itsc-3155-final-group-2/main/AdmissionsData.csv")
 
 # -- Our data is technically already "clean" due to how we formatted it in excel (thanks Christian).
 

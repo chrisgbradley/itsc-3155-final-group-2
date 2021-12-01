@@ -1,6 +1,10 @@
 import pandas as pd
-import plotly.express as px
-from dash import Dash, dcc, html, Input, Output
+import plotly.express as px  # (version 4.7.0 or higher)
+from dash import Dash
+from dash.dependencies import Input, Output
+import dash_core_components as dcc
+import dash_html_components as html
+import plotly.graph_objs as go
 from django_plotly_dash import DjangoDash
 
 app = DjangoDash('AccRate')   # replaces dash.Dash
@@ -86,6 +90,3 @@ def update_graph(option_slctd):
     )
     # -- Return slider and chart
     return container, fig
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
