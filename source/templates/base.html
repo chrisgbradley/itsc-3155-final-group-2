@@ -5,16 +5,16 @@
 
 {% include 'partials/_head.html' %}
 
-<body>
+<body class="flex-container">
 
 {% include 'partials/header.html' %}
 
-<div class="content">
+<main class="flex-row content">
 
     {% block content %}
     {% endblock %}
 
-</div>
+</main>
 
 {% include 'partials/footer.html' %}
 

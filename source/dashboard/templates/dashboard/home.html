@@ -1,83 +1,68 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body>
-	<main>
-		<br><br><br>
-		<div class="home">
-			<table>
-				<tbody>
-					<tr>
-						<td>
-							<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
-						</td>
-						<td rowspan="2"><img src="{% static 'students.png' %}" height="600px" width=""></td>
-					</tr>
-					<tr>
-						<td>
-							<p style="text-align:center;">
-								Tired of combing the web for info on your prospective schools? <br>
-								Tired of hard to read reports and misleading adverts? <br>
-								Want to discover what college is best for you?
-							</p>
-							<p style="text-align:center;font-size:40px">
-								<em>We have you covered.</em>
-							</p>
-							<form action="../../dashboard" style="text-align: center;">
-    							<input type="submit" value="View Our Data" />
-							</form>
-							<br><br><br>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<div>
-			<table class="stats">
-				<tbody>
-					<tr>
-						<td class="descriptions">
-							Gathered Since
-						</td>
-						<td class="descriptions">
-							Number of Colleges Tracked
-						</td>
-						<td class="descriptions">
-							Estimated Total of Graduates
-						</td>
-						<td class="descriptions">
-							Estimated Debt Total
-						</td>
-					</tr>
-
-					<tr>
-						<td class="numbers">
-							1996
-						</td>
-						<td class="numbers">
-							2981
-						</td>
-						<td class="numbers">
-							36.81 Million
-						</td>
-						<td class="numbers">
-							1.85 Trillion
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<br><br>
-			<p id="statTalk">
-				The data you can access and browse through within the EduWatch dashboard is a compilation
-				of data gathered from college students since 1996. Thanks to how long this data has been in the process
-				of being collected, our data set has managed to compile information from across 2981 different colleges.
-				Within this time, there has been a reported total of 36.81 million college graduates in this time.
-				Our data set also provides information such as how much dept these college students have collected, which is currently
-				estimated to be around 1.85 trillion dollars.
+	
+	<section id="hero" class="hero">
+		<div class="hero-image students1"></div>
+		<div class="message-wrapper">
+			<div class="message">
+			<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
+			<p>
+				Tired of combing the web for info on your prospective schools? <br>
+				Tired of hard to read reports and misleading adverts? <br>
+				Want to discover what college is best for you?
 			</p>
-			<br><br><br>
+			<p>
+				<em>We have you covered.</em>
+			</p>
+			<a href="../../dashboard" class="cta-button">View Our Data</a>
 		</div>
-	</main>
-</body>
+		</div>
+	</section>
+
+	<section id="brief" class="constrict-width center">
+		<table class="stats">
+			<tbody>
+				<tr>
+					<td class="descriptions">
+						<h3>Gathered Since</h3>
+					</td>
+					<td class="descriptions">
+						<h3>Number of Colleges Tracked</h3>
+					</td>
+					<td class="descriptions">
+						<h3>Estimated Total of Graduates</h3>
+					</td>
+					<td class="descriptions">
+						<h3>Estimated Debt Total</h3>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="numbers">
+						1996
+					</td>
+					<td class="numbers">
+						2981
+					</td>
+					<td class="numbers">
+						36.81 Million
+					</td>
+					<td class="numbers">
+						1.85 Trillion
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p id="statTalk" class="center">
+			The data you can access and browse through within the EduWatch dashboard is a compilation
+			of data gathered from college students since 1996. Thanks to how long this data has been in the process
+			of being collected, our data set has managed to compile information from across 2981 different colleges.
+			Within this time, there has been a reported total of 36.81 million college graduates in this time.
+			Our data set also provides information such as how much dept these college students have collected, which is currently
+			estimated to be around 1.85 trillion dollars.
+		</p>
+	</section>
+</div>
 {% endblock %}

@@ -1,174 +1,285 @@
+html, body {
+	height: 100%;
+	background-color: rgb(54, 54, 54);
+	font-family: 'Roboto', sans-serif;
+}
 
-		body
-		{
-			background-color: rgb(54, 54, 54);
-			font-family: 'Roboto', sans-serif;
-			min-height: 400px;
-   			margin-bottom: 50px;
-   			clear: both;
-		}
+header
+{
+	color: white;
+	background-color: rgb(81, 81, 89);
+	border-bottom: 3px solid rgb(0, 150, 136);
+	width: 100%;
+	padding: 0;
+	top: 0;
+}
+.constrict-width
+{
+	max-width: 1320px;
+}
 
-		header
-		{
-			color: white;
-			background-color: rgb(81, 81, 89);
-			border-bottom: solid 1px rgb(0, 150, 136);
-			padding-bottom: 5px;
+.center
+{
+	margin: 0 auto;
+}
 
-			width: 100%;
-        	position: fixed;
-        	padding: 0px 0;
-        	top: 0;
-		}
+.logo
+{
+	padding-right: 1px;
+	float: left;
+	font-size: 25px;
+}
 
-		.logo
-		{
-			padding-right: 1px;
-			float: left;
-			font-size: 25px;
-		}
+.edu
+{
+	color: rgb(0, 150, 136);
+}
 
-		.edu
-		{
-			color: rgb(0, 150, 136);
-		}
+.navBar
+{
+	padding-left: 40px;
+	font-size: 25px;
+}
 
-		.navBar
-		{
-			padding-left: 40px;
-			font-size: 25px;
-		}
+.navBar:hover
+{
+	color: rgb(0, 193, 175);
+}
 
-		.navBar:hover
-		{
-			color: rgb(0, 193, 175);
-		}
+a
+{
+	color: white;
+	text-decoration: none!important;
+}
 
-		a
-		{
-			color: white;
-			text-decoration: none!important;
-		}
+a:link
+{
+	text-decoration: none!important;
+}
 
-		a:link
-		{
-		    text-decoration: none!important;
-		}
+a:visited
+{
+	color: white;
+	text-decoration: none!important;
+}
 
-		a:visited
-		{
-			color: white;
-			text-decoration: none!important;
-		}
 
-		h2
-		{
-			color: white;
-			font-size: 50px;
-			text-align: center;
-		}
 
-		.home
-		{
-			border: solid 1px rgb(0, 150, 136);
-			text-align: justify;
-			padding-left: 120px;
-		}
+.home
+{
+	border: solid 1px rgb(0, 150, 136);
+	text-align: justify;
+	padding-left: 120px;
+}
 
-		.more
-		{
-			border: solid 1px rgb(0, 150, 136);
-			text-align: justify;
-			padding-left: 120px;
-		}
+.more
+{
+	border: solid 1px rgb(0, 150, 136);
+	text-align: justify;
+	padding-left: 120px;
+}
 
-		.more2
-		{
-			border: solid 1px rgb(0, 150, 136);
-			text-align: justify;
-			padding-right: 120px;
-		}
+.more2
+{
+	border: solid 1px rgb(0, 150, 136);
+	text-align: justify;
+	padding-right: 120px;
+}
 
-		td
-		{
-			color: white;
-			font-size: 20px;
-		}
+td
+{
+	color: white;
+	font-size: 20px;
+}
 
-		input[type=submit]
-		{
-			background-color: rgb(0, 150, 136);
-			border: none;
-			color: white;
-			padding: 16px 32px;
-			text-decoration: none;
-			margin: 4px 2px;
-			cursor: pointer;
-			font-size: 20px;
-		}
+input[type=submit]
+{
+	background-color: rgb(0, 150, 136);
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-size: 20px;
+}
 
-		input[type=submit]:hover
-		{
-			background-color: rgb(0, 193, 175);
-			color: black;
-		}
+input[type=submit]:hover
+{
+	background-color: rgb(0, 193, 175);
+	color: black;
+}
 
-		.stats
-		{
-			margin-left: auto;
-  			margin-right: auto;
-		}
+.stats
+{
+	margin-left: auto;
+	margin-right: auto;
+}
 
-		.descriptions
-		{
-			color: white;
-			text-align: center;
-			padding-left: 40px;
-			padding-right: 40px;
-			padding-top: 90px;
-			padding-bottom: 25px;
-			font-size: 15px;
-		}
+.descriptions
+{
+	color: white;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 90px;
+	padding-bottom: 25px;
+	font-size: 15px;
+}
 
-		.numbers
-		{
-			color: rgb(0, 150, 136);
-			text-align: center;
-			font-size: 35px;
-		}
+.numbers
+{
+	color: rgb(0, 150, 136);
+	text-align: center;
+	font-size: 35px;
+}
 
-		#statTalk
-		{
-			color: white;
-			text-align: center;
-			padding-left: 450px;
-			padding-right: 450px;
-		}
+#statTalk
+{
+	color: white;
+	text-align: center;
+	max-width: 720px;
+	padding: 64px 0;
+	line-height: 1.75;
+}
 
-		footer
-		{
-			color: white;
-			background-color: rgb(81, 81, 89);
-			border-top: solid 1px rgb(0, 150, 136);
-			padding-bottom: 5px;
-			text-align: center;
-			padding: 5px;
-			font-size: 10px;
+footer
+{
+	color: white;
+	background-color: rgb(81, 81, 89);
+	border-top: 3px solid rgb(0, 150, 136);
+	text-align: center;
+	font-size: 10px;
+	width: 100%;
+}
 
-			width: 100%;
-			position: fixed;
-			padding: 0px 0;
-			bottom: 0;
-		}
+.foot
+{
+	margin-left: auto;
+	margin-right: auto;
+}
 
-		.foot
-		{
-			margin-left: auto;
-  			margin-right: auto;
-		}
+.forFoot
+{
+	font-size: 15px;
+	padding: 25px;
+}
 
-		.forFoot
-		{
-			font-size: 15px;
-			padding: 25px;
-		}
+.flex-container
+{
+	display: flex;
+	flex-flow: column;
+}
+
+header.flex-row
+{
+  flex: 0 1 auto;
+}
+
+main.flex-row
+{
+  flex: 1 1 auto;
+}
+
+footer.flex-row
+{
+	flex: 0 1 72px;
+}
+
+.dash_app_chart
+{
+	height: 100%;
+	width: 100%;
+}
+
+.dash_app_chart iframe
+{
+	height: 100%;
+	width:100%;
+}
+
+.hero {
+	display: flex;
+	height: 50%;
+	position: relative;
+	border-bottom: 1px solid rgb(0, 150, 136);
+}
+.hero-image
+{
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 60%;
+	left: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-image.students1
+{
+	background-image: url('students1.png');
+}
+
+.hero-image.students2
+{
+	background-image: url('students2.png');
+}
+.hero-image.students3
+{
+	background-image: url('students3.png');
+}
+
+.hero.swap .hero-image
+{
+	left: 0;
+}
+
+.hero.swap .message-wrapper
+{
+	left: 50%
+}
+
+.message-wrapper
+{
+	position: relative;
+	height: 100%;
+	width: 50%;
+}
+.message
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.message h2
+{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.message p
+{
+	color: white;
+	font-size: 22px;
+	line-height: 1.75;
+	text-align: center;
+}
+
+.cta-button
+{
+	margin: 0 auto;
+	display: block;
+	padding: 20px 25px;
+	background: rgb(0, 150, 136);
+	width: 150px;
+	text-align: center;
+}
+.cta-button:hover
+{
+	background: rgb(0, 193, 175);
+}
