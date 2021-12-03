@@ -5,11 +5,11 @@
 
 {% include 'partials/_head.html' %}
 
-<body class="flex-container">
+<body class="flex-container flex-columns">
 
 {% include 'partials/header.html' %}
 
-<main class="flex-row">
+<main id="main-content" class="flex-container flex-row flex-columns">
 
     {% block content %}
     {% endblock %}
