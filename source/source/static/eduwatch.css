@@ -173,17 +173,18 @@ footer
 
 header.flex-row
 {
-  flex: 0 1 auto;
+	height: 72px;
 }
 
 main.flex-row
 {
-  flex: 1 1 auto;
+  	flex: auto;
+	overflow: auto;
 }
 
 footer.flex-row
 {
-	flex: 0 1 72px;
+	height: 72px;
 }
 
 .dash_app_chart
@@ -279,7 +280,15 @@ footer.flex-row
 	width: 150px;
 	text-align: center;
 }
+
 .cta-button:hover
 {
 	background: rgb(0, 193, 175);
+}
+
+.message .aside
+{
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 480px;
 }
