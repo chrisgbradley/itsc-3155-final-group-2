@@ -1,6 +1,4 @@
 import pandas as pd
-import plotly.express as px  # (version 4.7.0 or higher)
-from dash import Dash
 from dash.dependencies import Input, Output
 import dash_core_components as dcc
 import dash_html_components as html
@@ -64,6 +62,32 @@ app.layout = html.Div([
 # - Here we have 2 outputs and 1 input. The output container is simply anything on the page that isn't a graph. The my
 # bee map is for containing our plotly graph. The input is the users selected year. This will be changeable through the
 # dropdown component.
+
+
+def change(layout): # -- Styling
+    # print(layout)
+    # print(layout.template)
+    modified_layout = layout
+    modified_layout.height = 720
+    modified_layout.width = 1320
+    modified_layout.plot_bgcolor = 'rgb(54, 54, 64)'
+    modified_layout.paper_bgcolor = 'rgb(81, 81, 89)'
+    modified_layout.font.color = 'rgb(255, 255, 255)'
+    modified_layout.coloraxis.colorscale = [
+        [0.0,   '#ffffff'],
+        [0.125, '#ccf8ee'],
+        [0.25,  '#a9ecdf'],
+        [0.375, '#8ddfd0'],
+        [0.5,   '#73d1c1'],
+        [0.625, '#5bc2b2'],
+        [0.75,  '#43b4a4'],
+        [0.875, '#2aa596'],
+        [1.0,   '#009688'],
+    ]
+    modified_layout.geo.bgcolor = 'rgb(54, 54, 64)'
+    modified_layout.geo.lakecolor = 'rgb(54, 54, 64)'
+
+    return modified_layout
 
 @app.callback(
     [Output(component_id='output_container', component_property='children'),
