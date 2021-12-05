@@ -3,14 +3,25 @@
 {% load static %}
 {% load plotly_dash %}
 
+
+
+{% block dash_app_title %}
+
+    <h1 class="dash_app_title">Average Tuition By Residency and State 2001-2019</h1>
+
+{% endblock %}
+
+
+
+
+
+
 {% block board %}
 
-<h2>tuition</h2>
+    <div class="dash_app_chart">
 
-<div class="dash_app_chart">
+        {% plotly_app name="tuition" ratio=1 %}
 
-{% plotly_app name="tuition" ratio=1 %}
-
-</div>
+    </div>
 
 {% endblock %}

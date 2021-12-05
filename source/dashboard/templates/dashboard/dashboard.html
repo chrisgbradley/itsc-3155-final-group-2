@@ -1,12 +1,24 @@
-
 {% extends 'base.html' %}
 {% load static %}
+
+
+
 {% block content %}
 
-<h1>Dashboard</h1>
-{% include './partials/_dashnav.html' %}
 
-{% block board %}
-{% endblock %}
+    <div class="dash_topbar flex-container">
+
+        {% block dash_app_title %}
+        {% endblock %}
+
+
+        {% include './partials/_dashnav.html' %}
+    </div>
+
+
+
+    {% block board %}
+    {% endblock %}
+
 
 {% endblock %}

@@ -27,9 +27,9 @@ YEARS = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
 
 # -------------------------------------------------------------------------------------------------------------------
 
-plotly_layout = go.Layout(
-    paper_bgcolor='rgb(81, 81, 89, 1)', plot_bgcolor='rgb(54, 54, 64, 1)'
-)
+# plotly_layout = go.Layout(
+#     paper_bgcolor='rgb(81, 81, 89, 1)', plot_bgcolor='rgb(54, 54, 64, 1)'
+# )
 
 # -- App Layout
 app.layout = html.Div([
@@ -37,14 +37,16 @@ app.layout = html.Div([
     # - HTML core components = 'html.'
     # - Dash core components = 'dcc.'
 
-    html.H1("Test In State Tuition Graph", style={'text-align': 'center'}),
-
     html.Div(
         id="slider-container",
         children=[
             html.P(
                 id="slider-text",
                 children="Drag the slider to change the year:",
+                style={
+                    'color': '#FFFFFF',
+                    'font-weight': 'semi-bold'
+                },
             ),
             dcc.Slider(
                 id="years",
@@ -56,8 +58,8 @@ app.layout = html.Div([
                         "label": str(year),
                         "style": {
                             "color": "#009688",
-                            # "font-size": "20px",
-                            # "font-family": "Roboto, Sans-Serif"
+                            "font-size": "16px",
+                            "font-family": "Roboto, Sans-Serif",
                         },
                     }
                     for year in YEARS
@@ -65,21 +67,55 @@ app.layout = html.Div([
                 included=False
             ),
         ],
+        style={
+            'margin': '32px 0',
+        }
     ),
 
     html.Div(id='tabs', children=[
         # dcc.Graph(id='in_tuition_map', figure={}),
         # dcc.Graph(id='out_tuition_map', figure={})
         dcc.Tabs(id="in-out-tabs", value="in-state", children=[
-            dcc.Tab(label="In-State Tuition", value="in-state"),
-            dcc.Tab(label="Out-Of-State Tuition", value="out-state")
+            dcc.Tab(label="In-State Tuition",
+                    value="in-state",
+                    style={
+                        'background': 'rgb(54,54,64)',
+                        'color': '#FFFFFF',
+                        'font-weight': 'semi-bold',
+                        'border': 'none',
+                    },
+                    selected_style={
+                        'background': 'rgb(81, 81, 89)',
+                        'color': '#009688',
+                        'font-weight': 'bold',
+                        'border': 'none',
+                        'border-top': '3px solid #009688',
+                    }),
+            dcc.Tab(label="Out-Of-State Tuition",
+                    value="out-state",
+                    style={
+                        'background': 'rgb(54,54,64)',
+                        'color': '#FFFFFF',
+                        'font-weight': 'semi-bold',
+                        'border': 'none',
+                    },
+                    selected_style={
+                        'background': 'rgb(81, 81, 89)',
+                        'color': '#009688',
+                        'font-weight': 'bold',
+                        'border': 'none',
+                        'border-top': '3px solid #009688',
+                    })
         ])
     ]),
 
-    html.Br(),
-
     html.Div(id="tab-graph-output")
-])
+],
+    style={
+        "font-size": "16px",
+        "font-family": "Roboto, Sans-Serif",
+    }
+)
 
 # ------------------------------------------------------------------------------
 
@@ -97,8 +133,7 @@ def change(layout):
     # print(layout)
     # print(layout.template)
     modified_layout = layout
-    modified_layout.height = 720
-    modified_layout.width = 1320
+    modified_layout.height = 600
     modified_layout.plot_bgcolor = 'rgb(54, 54, 64)'
     modified_layout.paper_bgcolor = 'rgb(81, 81, 89)'
     modified_layout.font.color = 'rgb(255, 255, 255)'
@@ -136,13 +171,12 @@ def render_content(tab, year):
             color='TUITION_IN',
             hover_data=['STATE', 'TUITION_IN'],
             color_continuous_scale=px.colors.sequential.YlOrRd,
-            labels={'TUITION_IN': 'Avg In-State Tuition'},
+            labels={'TUITION_IN': 'Cost'},
         )
 
         fig_in.layout = change(fig_in.layout)
 
         return html.Div([
-            html.H3('In-State Tuition'),
             dcc.Graph(id='in-state-graph',
                       figure=fig_in)
         ])
@@ -156,13 +190,12 @@ def render_content(tab, year):
             color='TUITION_OUT',
             hover_data=['STATE', 'TUITION_OUT'],
             color_continuous_scale=px.colors.sequential.YlOrRd,
-            labels={'TUITION_OUT': 'Avg Out-of-State Tuition'},
+            labels={'TUITION_OUT': 'Cost'},
         )
 
         fig_out.layout = change(fig_out.layout)
 
         return html.Div([
-            html.H3('In-State Tuition'),
             dcc.Graph(id='in-state-graph',
                       figure=fig_out)
         ])

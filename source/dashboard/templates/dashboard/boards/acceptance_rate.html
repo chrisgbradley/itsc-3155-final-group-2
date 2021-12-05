@@ -1,12 +1,27 @@
 {% extends '../dashboard.html' %}
+
 {% load static %}
+{% load plotly_dash %}
+
+
+
+{% block dash_app_title %}
+
+    <h1 class="dash_app_title">TBF</h1>
+
+{% endblock %}
+
+
+
+
+
 
 {% block board %}
 
-<h2>acceptance rate</h2>
+    <div class="dash_app_chart">
 
-{% load plotly_dash %}
+        {% plotly_app name="acceptance_rate" ratio=1 %}
 
-{% plotly_app name="acceptance_rate" ratio=1 %}
+    </div>
 
 {% endblock %}
