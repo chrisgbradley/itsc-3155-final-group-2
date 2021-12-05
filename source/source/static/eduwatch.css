@@ -261,15 +261,14 @@ a, a:hover, a:active
 	font-size: 15px;
 }
 
+.dash_app_chart
+{
+	height: 100%;
+	width: 100%;
+}
 
-/*.dash_app_chart*/
-/*{*/
-/*	height: 100%;*/
-/*	width: 100%;*/
-/*}*/
-
-/*.dash_app_chart iframe*/
-/*{*/
-/*	height: 100%;*/
-/*	width:100%;*/
-/*}*/
+.dash_app_chart iframe
+{
+	height: 100%;
+	width: 100%;
+}

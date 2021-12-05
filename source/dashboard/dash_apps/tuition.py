@@ -8,7 +8,7 @@ import plotly.graph_objs as go  # pip install dash (version 2.0.0 or higher)
 from django_plotly_dash import DjangoDash
 
 
-app = DjangoDash(name="Tuition")
+app = DjangoDash(name="tuition")
 
 
 # -- Import our data into the code as a panda data frame.
