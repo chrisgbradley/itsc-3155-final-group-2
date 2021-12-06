@@ -74,6 +74,7 @@ def change(layout): # -- Styling
     modified_layout.plot_bgcolor = 'rgb(54, 54, 64)'
     modified_layout.paper_bgcolor = 'rgb(81, 81, 89)'
     modified_layout.font.color = 'rgb(255, 255, 255)'
+    modified_layout.yaxis = dict(range=[0.5, 1])
     modified_layout.coloraxis.colorscale = [
         [0.0, '#ffffff'],
         [0.125, '#ccf8ee'],
