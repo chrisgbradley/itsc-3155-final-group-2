@@ -296,6 +296,11 @@ a, a:hover, a:active
 	padding-bottom: 30px;
 }
 
+.dash_app_chart .dash-graph
+{
+	margin-bottom: 30px;
+}
+
 .dash_app_chart iframe
 {
 	height: 100%;
