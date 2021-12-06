@@ -16,7 +16,7 @@ def change(layout): # -- Styling
     # print(layout)
     # print(layout.template)
     modified_layout = layout
-    modified_layout.yaxis = dict(range=[0.3,.8])
+    modified_layout.yaxis = dict(range=[0.3,.8], tickformat=".2%")
     modified_layout.height = 600
     modified_layout.plot_bgcolor = 'rgb(54, 54, 64)'
     modified_layout.paper_bgcolor = 'rgb(81, 81, 89)'

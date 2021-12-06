@@ -67,14 +67,14 @@ app.layout = html.Div([
 # dropdown component.
 
 def change(layout): # -- Styling
-    print(layout)
-    print(layout.template)
+    # print(layout)
+    # print(layout.template)
     modified_layout = layout
     modified_layout.height = 600
     modified_layout.plot_bgcolor = 'rgb(54, 54, 64)'
     modified_layout.paper_bgcolor = 'rgb(81, 81, 89)'
     modified_layout.font.color = 'rgb(255, 255, 255)'
-    modified_layout.yaxis = dict(range=[0.5, 1])
+    modified_layout.yaxis = dict(range=[0.5, 1], tickformat=".2%")
     modified_layout.coloraxis.colorscale = [
         [0.0, '#ffffff'],
         [0.125, '#ccf8ee'],
@@ -112,7 +112,11 @@ def update_graph(option_slctd):
     )
 
     fig_bar.layout = {
+        'yaxis': {
+            'title': 'Percent of Students Accepted'
+        },
         'xaxis': {
+            'title': 'State',
             'categoryorder': 'total descending'
         }
     }
