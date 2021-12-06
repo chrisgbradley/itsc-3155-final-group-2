@@ -20,7 +20,9 @@
 
     <div class="dash_app_chart">
 
-        {% plotly_app name="tuition" ratio=1 %}
+        {% plotly_header %}
+        {% plotly_direct name="tuition" %}
+        {% plotly_footer %}
 
     </div>
 

@@ -6,6 +6,7 @@ import dash_html_components as html
 from django_plotly_dash import DjangoDash
 
 app = DjangoDash('acceptance_rate')   # replaces dash.Dash
+
 # -- Import our data into the code using raw git hub link
 df = pd.read_csv("https://raw.githubusercontent.com/dgrant28/hello-world/main/AdmissionsData.csv")
 # -- Creation of variable YEARS to be used in slider
@@ -30,13 +31,22 @@ app.layout = html.Div([
                 marks={
                     str(year): {
                         "label": str(year),
-                        "style": {"color": "#009687"},
+                        "style": {
+                            "color": "#009688",
+                            "font-size": "16px",
+                            "font-family": "Roboto, Sans-Serif",
+                            "padding-top": "15px",
+                        },
                     }
                     for year in YEARS
                 },
+                className='dash_app_slider',
                 included=False
             ),
         ],
+        style={
+            'margin': '32px 0',
+        }
     ),
 
     html.Div(id='output_container', children=[]),

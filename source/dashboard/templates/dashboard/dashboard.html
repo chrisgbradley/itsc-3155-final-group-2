@@ -21,4 +21,13 @@
     {% endblock %}
 
 
+    <script type="application/javascript">
+        var iframes = $('iframe');
+        iframes.onload(function () {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        });
+        iframes.attr('scrolling', 'no');
+    </script>
+
+
 {% endblock %}

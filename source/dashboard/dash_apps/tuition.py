@@ -10,7 +10,6 @@ from django_plotly_dash import DjangoDash
 
 app = DjangoDash(name="tuition")
 
-
 # -- Import our data into the code as a panda data frame.
 df = pd.read_csv("https://raw.githubusercontent.com/chrisgbradley/itsc-3155-final-group-2/main/data/Tuition-CSV.csv")
 
@@ -60,10 +59,12 @@ app.layout = html.Div([
                             "color": "#009688",
                             "font-size": "16px",
                             "font-family": "Roboto, Sans-Serif",
+                            "padding-top": "15px",
                         },
                     }
                     for year in YEARS
                 },
+                className='dash_app_slider',
                 included=False
             ),
         ],

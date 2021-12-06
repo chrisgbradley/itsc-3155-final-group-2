@@ -36,11 +36,13 @@ app.layout = html.Div([
                             "color": "#009688",
                             "font-size": "16px",
                             "font-family": "Roboto, Sans-Serif",
+                            "padding-top": "15px",
                         },
                     }
                     for year in YEARS
                 },
-                included=False
+                className='dash_app_slider',
+                included=False,
             ),
 
         ],

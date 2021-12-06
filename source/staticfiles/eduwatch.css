@@ -1,0 +1,319 @@
+html, body {
+	height: 100%;
+	background-color: rgb(54, 54, 54);
+	font-family: 'Roboto', sans-serif;
+}
+
+.constrict-width
+{
+	max-width: 1320px;
+}
+
+.center
+{
+	margin: 0 auto;
+}
+
+.flex-container
+{
+	display: flex;
+}
+
+.flex-container.flex-columns
+{
+	flex-flow: column;
+}
+
+#header.flex-row
+{
+	height: 72px;
+}
+
+#main-content.flex-row
+{
+  	flex: auto;
+}
+
+#main-content > .flex-row
+{
+	flex: 1 1 600px;
+}
+
+#footer.flex-row
+{
+	height: 72px;
+}
+
+.topbar
+{
+	color: white;
+	background-color: rgb(81, 81, 89);
+	border-bottom: 3px solid rgb(0, 150, 136);
+	width: 100%;
+	padding: 0;
+	top: 0;
+}
+
+.topbar .flex-container
+{
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+}
+
+.logo
+{
+	padding-right: 1px;
+	float: left;
+	font-size: 25px;
+}
+
+.edu
+{
+	color: rgb(0, 150, 136);
+}
+
+.nav-item
+{
+	padding-left: 40px;
+	font-size: 25px;
+}
+
+.nav-item:hover
+{
+	color: rgb(0, 193, 175);
+}
+
+.hero
+{
+	display: flex;
+	height: 50%;
+	position: relative;
+	border-bottom: 1px solid rgb(0, 150, 136);
+}
+
+.hero-image
+{
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 60%;
+	left: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-image.students1
+{
+	background-image: url('students1.png');
+}
+
+.hero-image.students2
+{
+	background-image: url('students2.png');
+}
+
+.hero-image.students3
+{
+	background-image: url('students3.png');
+}
+
+.hero.swap .hero-image
+{
+	left: 0;
+}
+
+.message-wrapper
+{
+	position: relative;
+	height: 100%;
+	width: 50%;
+}
+
+.hero.swap .message-wrapper
+{
+	left: 50%
+}
+
+.message
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.message h2
+{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.message p
+{
+	color: white;
+	font-size: 22px;
+	line-height: 1.75;
+	text-align: center;
+}
+
+.message .aside
+{
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 480px;
+}
+
+.cta-button
+{
+	margin: 0 auto;
+	display: block;
+	padding: 20px 25px;
+	background: rgb(0, 150, 136);
+	width: 150px;
+	text-align: center;
+	color: white;
+}
+
+.cta-button:hover
+{
+	background: rgb(0, 193, 175);
+}
+
+a, a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+a, a:hover, a:active
+{
+	text-decoration: none;
+}
+
+.stats
+{
+
+	margin: 50px auto 0;
+	color: white;
+	text-align: center;
+}
+
+.stat
+{
+	padding: 0 25px;
+}
+
+.stat-title
+{
+	font-size: 22px;
+}
+
+.stat-value
+{
+	font-size: 26px;
+	color: rgb(0, 150, 136);
+}
+
+.descriptions
+{
+	color: white;
+	text-align: center;
+	padding: 90px 40px 25px 40px;
+	font-size: 15px;
+}
+
+.numbers
+{
+	color: rgb(0, 150, 136);
+	text-align: center;
+	font-size: 35px;
+}
+
+#brief p
+{
+	color: white;
+	text-align: center;
+	max-width: 720px;
+	padding: 64px 0;
+	line-height: 1.75;
+	font-size: 20px;
+}
+
+.bottombar
+{
+	color: white;
+	background-color: rgb(81, 81, 89);
+	border-top: 3px solid rgb(0, 150, 136);
+	width: 100%;
+}
+
+.bottombar .flex-container
+{
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	justify-content: space-between;
+	max-width: 1320px;
+	font-size: 15px;
+}
+
+#dashnav
+{
+	width: 300px;
+	height: 45px;
+	align-self: end;
+	margin: 30px 0;
+    padding: 0 15px;
+	color: white;
+    background: rgb(81, 81, 89);
+}
+
+.dash_topbar
+{
+	align-self: center;
+	align-items: center;
+	color: #ffffff;
+	justify-content: space-between;
+	width: 1080px;
+	padding-top: 30px;
+}
+
+.dash_app_title
+{
+	text-align: center;
+	margin: 0 50px;
+}
+
+.dash_app_chart
+{
+	height: 100%;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.dash_app_chart iframe
+{
+	height: 100%;
+	width: 100%;
+}
+
+.dash_app_slider
+{
+	height: 500px;
+}
+
+.dash_app_slider > .rc-slider > .rc-slider-rail
+{
+	height: 8px;
+}
+
+
+.dash_app_slider > .rc-slider > .rc-slider-step span
+{
+	height: 16px;
+	width: 16px;
+}
