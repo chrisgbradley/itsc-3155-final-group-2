@@ -24,19 +24,15 @@
 		<div class="stats flex-container">
 			<div class="stat flex-row flex-container flex-columns">
 				<div class="stat-title flex-row"><h3>Gathered Since</h3></div>
-				<div class="stat-value flex-row">1996</div>
+				<div class="stat-value flex-row"><span class="count">1996</span></div>
 			</div>
 			<div class="stat flex-row flex-container flex-columns">
-				<div class="stat-title flex-row"><h3>Number of Colleges Tracked</h3></div>
-				<div class="stat-value flex-row">2981</div>
+				<div class="stat-title flex-row"><h3>Number of Colleges Recorded</h3></div>
+				<div class="stat-value flex-row"><span class="count">2981</span></div>
 			</div>
 			<div class="stat flex-row flex-container flex-columns">
-				<div class="stat-title flex-row"><h3>Estimated Total of Graduates</h3></div>
-				<div class="stat-value flex-row">36.81 Million</div>
-			</div>
-			<div class="stat flex-row flex-container flex-columns">
-				<div class="stat-title flex-row"><h3>Estimated Debt Total</h3></div>
-				<div class="stat-value flex-row">1.85 Trillion</div>
+				<div class="stat-title flex-row"><h3>Data Points Tracked</h3></div>
+				<div class="stat-value flex-row"><span class="count">6695</span></div>
 			</div>
 		</div>
 		
@@ -50,4 +46,18 @@
 		</p>
 	</section>
 </div>
+
+<!--<script type="application/javascript">-->
+<!--	$('.count').each(function () {-->
+<!--		$(this).prop('Counter',0).animate({-->
+<!--			Counter: $(this).text()-->
+<!--		}, {-->
+<!--			duration: 2000,-->
+<!--			easing: 'swing',-->
+<!--			step: function (now) {-->
+<!--				$(this).text(Math.ceil(now));-->
+<!--			}-->
+<!--		});-->
+<!--	});-->
+<!--</script>-->
 {% endblock %}
