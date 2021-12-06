@@ -33,13 +33,13 @@
 			color: rgb(0, 150, 136);
 		}
 
-		.navBar
+		.nav-item
 		{
 			padding-left: 40px;
 			font-size: 25px;
 		}
 
-		.navBar:hover
+		.nav-item:hover
 		{
 			color: rgb(0, 193, 175);
 		}

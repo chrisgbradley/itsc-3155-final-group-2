@@ -1,12 +1,13 @@
 {% load static %}
 
-<header>
-	<a href="../../../"><img src="{% static '_EduWatch_logo_light.svg' %}" height="50px" width="50px" class="logo"></a>
-	<a href="../../../"><h1 class="logo"><span class="edu">Edu</span>Watch</h1></a>
-	<nav>
-		<br>
-		<a class="navBar" href="../../../" style="text-decoration: none">Home</a>
-		<a class="navBar" href="../../../about" style="text-decoration: none">About</a>
-		<a class="navBar" href="../../../dashboard" style="text-decoration: none">Data</a>
-	</nav>
+<header id="header" class="topbar flex-row">
+	<div class="abs-center constrict-width center flex-container">
+		<a href="../../../"><img src="{% static '_EduWatch_logo_light.svg' %}" height="50px" width="50px" class="logo"></a>
+		<a href="../../../"><h1 class="logo"><span class="edu">Edu</span>Watch</h1></a>
+		<nav id="navigation" class="navbar">
+			<a class="nav-item" href="../../../" style="text-decoration: none">Home</a>
+			<a class="nav-item" href="../../../about" style="text-decoration: none">About</a>
+			<a class="nav-item" href="../../../dashboard" style="text-decoration: none">Data</a>
+		</nav>
+	</div>
 </header>

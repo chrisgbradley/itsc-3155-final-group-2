@@ -1,66 +1,63 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body>
-	<br><br><br>
-	<div class="more">
-			<table>
-				<tbody>
-					<tr>
-						<td>
-							<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
-						</td>
-						<td rowspan="2"><img src="{% static 'students2.png' %}" height="550px" width="905px"></td>
-					</tr>
-					<tr>
-						<td>
-							<p style="text-align:center">
-								EduWatch was created with the vision of compiling information on the nation's top schools
-								into one convenient place. We felt it important to create a place for prospective and current students
-								to view information relevant to their college career in a way that is both easily digestible and highly specific.
-								To this end, we provide many viewing formats for our data.
-							</p>
-							<p style="text-align:center;font-size:40px">
-								<em>Want to see for youself?</em>
-							</p>
-							<form action="" style="text-align: center;">
-    							<input type="submit" value="View The Data" />
-							</form>
-							<br><br><br>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+<section id="about-us" class="about-section hero flex-row">
 
-		<div class="more2">
-			<table>
-				<tbody>
-					<tr>
-						<td rowspan="2"><img src="{% static 'learning.png' %}" height="550px" width="905px"></td>
-						<td>
-							<h2>Welcome to <span class="edu">Edu</span>Watch</h2>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p style="text-align:center">
-								Our goal is to provide you with the data
-								you need to make an informed choice with your education. Important college statistics are spread out
-								over the internet, but here at EduWatch we have compiled the most important data from the Office of Planning, Evaluation,
-								and Policy Development (OPEPD) and made it as easy to understand as possible.
-							</p>
-							<p style="text-align:center;font-size:40px">
-								<em>Want to find out more?</em>
-							</p>
-							<form action="" style="text-align: center;">
-    							<input type="submit" value="View The Data" />
-							</form>
-							<br><br><br>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+	<div class="hero-image students2"></div>
+	<div class="message-wrapper">
+		<div class="message">
+			<p>
+				EduWatch was created with the vision of compiling information on the nation's top schools
+				into one convenient place. We, third and fourth year computer science students, felt it important
+				to create a place for prospective and current students to view information relevant to their
+				college career in a way that is both easily digestible and highly specific.
+				To this end, we provide many viewing formats for our data.
+			</p>
+			<p>
+				<em>Want to see for youself?</em>
+			</p>
+			<a href="../../dashboard" class="cta-button">View Our Data</a>
 		</div>
-</body>
+	</div>
+</section>
+
+<section id="about-project" class="about-section hero swap flex-row">
+
+	<div class="hero-image students3"></div>
+	<div class="message-wrapper">
+		<div class="message">
+			<p>
+				Our goal is to provide you with the data you need to make an informed choice with your education.
+				Important college statistics are spread out over the internet, but here at EduWatch we have compiled
+				the most important data from the Office of Planning, Evaluation, and Policy Development (OPEPD) and
+				made it as easy to understand as possible.
+			</p>
+			<p>
+				From the College Scorecard data, you'll be able to find data on completion rates based on gender,
+				types of degrees being completed, transfer rates, acceptance/exit/completion rates, tuition costs,
+				tuition costs based on income, and more. This data set comprises just under 2500 data points, gathered
+				from nearly 5000 universities since 1996 across the entire United States, territories, and major
+				outlying islands.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section id="about-aside" class="about-section hero flex-row">
+
+	<div class="hero-image students1"></div>
+	<div class="message-wrapper">
+		<div class="message">
+			<p class="aside">
+				<em>
+					An aside from the project authors: <br>
+					As this project is a proof-of-concept, this data is applicable in many more ways that what has been
+					done. Given more time, we would expand on the data presented with more detailed interactions and
+					provide more charts, expanding on unused portions of the College Scorecard data.
+				</em>
+			</p>
+		</div>
+	</div>
+</section>
+
 {% endblock %}

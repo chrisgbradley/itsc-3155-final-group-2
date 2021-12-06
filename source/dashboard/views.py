@@ -22,13 +22,13 @@ def tuition(requests):
     return render(requests, 'dashboard/boards/tuition.html', {'tuition': 'selected'})
 
 
-def admissions(requests):
-    return render(requests, 'dashboard/boards/admissions.html', {'admissions': 'selected'})
+def acceptance_rate(requests):
+    return render(requests, 'dashboard/boards/acceptance_rate.html', {'acceptance_rate': 'selected'})
 
 
-def degrees(requests):
-    return render(requests, 'dashboard/boards/degrees.html', {'degrees': 'selected'})
+def gender(requests):
+    return render(requests, 'dashboard/boards/gender.html', {'gender': 'selected'})
 
 
-def loansgrants(requests):
-    return render(requests, 'dashboard/boards/loansgrants.html', {'loansgrants': 'selected'})
+def completion_rate(requests):
+    return render(requests, 'dashboard/boards/completion_rate.html', {'completion_rate': 'selected'})

@@ -1,12 +1,33 @@
-
 {% extends 'base.html' %}
 {% load static %}
+
+
+
 {% block content %}
 
-<h1>Dashboard</h1>
-{% include './partials/_dashnav.html' %}
 
-{% block board %}
-{% endblock %}
+    <div class="dash_topbar flex-container">
+
+        {% block dash_app_title %}
+        {% endblock %}
+
+
+        {% include './partials/_dashnav.html' %}
+    </div>
+
+
+
+    {% block board %}
+    {% endblock %}
+
+
+    <script type="application/javascript">
+        var iframes = $('iframe');
+        iframes.onload(function () {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        });
+        iframes.attr('scrolling', 'no');
+    </script>
+
 
 {% endblock %}

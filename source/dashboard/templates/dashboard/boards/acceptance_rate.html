@@ -7,7 +7,7 @@
 
 {% block dash_app_title %}
 
-    <h1 class="dash_app_title">Average Number of Students Graduating in 4 years per School by State from 2001-2017</h1>
+    <h1 class="dash_app_title">Average Acceptance Rate of Students by State from 2001-2019</h1>
 
 {% endblock %}
 
@@ -21,7 +21,7 @@
     <div class="dash_app_chart">
 
         {% plotly_header %}
-        {% plotly_direct name="gender" %}
+        {% plotly_direct name="acceptance_rate" %}
         {% plotly_footer %}
 
     </div>
